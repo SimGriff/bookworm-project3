@@ -75,7 +75,7 @@ Bookworm is an interactive book review site for all book fans. The site allows r
 ### Colour Scheme
 *I used [Coolors](https://coolors.co/) to generate a colour scheme, I chose this particular colour scheme because I did not want to go with the usual browns of a book review site. I wanted the site to stand out from other book review sites by including a more colourful palette.
 
-![palette used for Project 3](docs/screenshots/Project 3 Palette.png)
+![palette used for Project 3](static/screenshots/Project 3 Palette.png)
 
 The colours chosen are intended to convey the feeling of relaxation and calmness when reading a book, while also attracting new user to the site. I selected only three of the colours to keep the site simple and less busy. 
 
@@ -94,3 +94,71 @@ Both fonts are fully cleared for both personal and commercial use.
 I have not used a background image on this site because I felt it would distract from the main focus of the site, the actual books with their cover images. Book cover images were taken directly from [Amazon](https://www.amazon.co.uk/).
 
 Icons from [Font Awesome](https://fontawesome.com/) are used throughout the site. The icons help inform the user of the purpose of a particular section and lead to a more enjoyable user experience. I have also used a Font Awesome icon as my main logo displayed throughout the site <i class="fa-solid fa-book-open-reader"></i>
+
+---
+## Wireframes
+
+The wireframes for the Bookworm site were produced using Balsamiq. 
+* Mobile Wireframes:
+  - [Home Unregistered Page](static/wireframes/Home - Not Logged In – Mobile.png)
+  - [Search Page Unregistered Page](static/wireframes/………… png)
+  - [Register Page](static/wireframes/Register Screen Mobile.png)
+
+  - [Log In Page](static/wireframes/Log In Screen Mobile.png)
+  - [Profile Page](static/wireframes/Profile - Logged In - Mobile.png)
+  - [Add Book Page](static/wireframes/Add Book Screen- Mobile.png)
+  - [Edit Book Page](static/wireframes/Edit Book Screen- Mobile.png)
+  - [Add Review Page](static/wireframes/…………..png)
+  - [Edit Review Page](static/wireframes/…………..png)
+  - [Admin Profile Page](static/wireframes/Profile - Admin Logged In - Mobile.png)
+  - [Admin Manage Genres](static/wireframes/Admin Manage Genres- Mobile.png)
+  - [Admin Manage Users](static/wireframes/…………..png)
+  - [Contact Page](static/wireframes/Contact Page- Mobile.png)
+* Desktop Wireframes:
+  - [Home Unregistered Page](static/wireframes/Home - Not Logged In - Desktop.png)
+  - [Search Page Unregistered Page](static/wireframes/………… png)
+  - [Register Page](static/wireframes/Register Screen - Desktop.png)
+
+  - [Log In Page](static/wireframes/Log In Screen - Desktop.png)
+  - [Profile Page](static/wireframes/Profile - Admin Logged In - Desktop.png)
+  - [Add Book Page](static/wireframes/Add Book Screen- Desktop.png)
+  - [Edit Book Page](static/wireframes/Edit Book Screen- Desktop.png)
+  - [Add Review Page](static/wireframes/…………..png)
+  - [Edit Review Page](static/wireframes/…………..png)
+  - [Admin Profile Page](static/wireframes/Profile - Admin Logged In - Desktop.png)
+  - [Admin Manage Genres](static/wireframes/Admin Manage Genres- Desktop.png)
+  - [Admin Manage Users](static/wireframes/…………..png)
+  - [Contact Page](static/wireframes/Contact Page- Desktop.png)
+
+
+---
+## Wireframes
+The wireframes for the Bookworm site were produced using Balsamiq. 
+* Mobile Wireframes:
+  - [Home Unregistered Page](static/wireframes/Home - Not Logged In - Mobile.png)
+  - [Search Page Unregistered Page](static/wireframes/………… png)
+  - [Register Page](static/wireframes/Register Screen - Mobile.png)
+
+  - [Log In Page](static/wireframes/Log In Screen - Mobile.png)
+  - [Profile Page](static/wireframes/Profile - Logged In - Mobile.png)
+  - [Add Book Page](static/wireframes/Add Book Screen - Mobile.png)
+  - [Edit Book Page](static/wireframes/Edit Book Screen - Mobile.png)
+  - [Add Review Page](static/wireframes/…………..png)
+  - [Edit Review Page](static/wireframes/…………..png)
+  - [Admin Profile Page](static/wireframes/Profile - Admin Logged In - Mobile.png)
+  - [Admin Manage Genres](static/wireframes/Admin Manage Genres - Mobile.png)
+  - [Admin Manage Users](static/wireframes/…………..png)
+  - [Contact Page](static/wireframes/Contact Page - Mobile.png)
+* Desktop Wireframes:
+  - [Home Unregistered Page](static/wireframes/Home - Not Logged In - Desktop.png)
+  - [Register Page](static/wireframes/Register Screen - Desktop.png)
+  - [Log In Page](static/wireframes/Log In Screen - Desktop.png)
+  - [Profile Page](static/wireframes/Profile - Admin Logged In - Desktop.png)
+  - [Add Book Page]( static/wireframes/Add Book Screen - Desktop.png)
+  - [Edit Book Page](static/wireframes/Edit Book Screen - Desktop.png)
+  - [Add Review Page](static/wireframes/…………..png)
+  - [Edit Review Page](static/wireframes/…………..png)
+  - [Admin Profile Page](static/wireframes/Profile - Admin Logged In - Desktop.png)
+  - [Admin Manage Genres](static/wireframes/Admin Manage Genres - Desktop.png)
+  - [Admin Manage Users](static/wireframes/…………..png)
+  - [Contact Page](static/wireframes/Contact Page - Desktop.png)
