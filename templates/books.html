@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookworm</title>
+</head>
+<body>
+    {% for book in books %}
+        {{ book.title }}<br>
+        {{ book.author }}<br>
+        {{ book.genre }}<br>
+        {{ book.synopsis }}<br>
+        {{ book.cover_url }}<br>
+    {% endfor %}
+</body>
+</html>
