@@ -42,3 +42,29 @@ Bookworm is an interactive book review site for all book fans. The site allows r
     11. As the site owner, I want to be able to delete a user’s account.  
 
 ---
+## Current features
+
+* Site is responsive on all screen sizes.
+* Nav menu adjusts accordingly to unregistered, registered users and Admin depending on the users log in status.
+* Identical footer displayed across the site to provide continuity.
+* Search bar on home page and profile page enables both registered and unregistered users to search for books by book title.
+* Site visitors can register on the site.
+* Registered users can log in and out of the site.
+* Registered users can add books to the site, the book will also be displayed in their Library shown on their Profile page.
+* Registered users can only edit their own added book.
+* Registered users can only delete their own books.
+* Admin users can add, edit and delete any books.
+* Admin user can add, edit and delete any genre.
+* Before a user deletes a book a confirmation is required preventing accidental deletion.
+* Cancel buttons are also shown alongside edit and delete buttons in case the user changes their mind and wants to cancel changes.
+* Social Media Links displayed in the footer on all pages.
+* Contact Page allows user to contact site owner.
+* The Bookworm site has the identical navbar and footer displayed on each page.
+
+## Future Features
+
+* Registered Users can review books before adding them to the site.
+* Flash messages providing user feedback for registered users when initially registered, logged in, logged out.
+* Admin users can edit the users password.
+* Admin users can delete any users account.
+* Pagination for the Home and Profile Pages
