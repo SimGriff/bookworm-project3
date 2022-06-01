@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&family=Source+Serif+Pro:wght@400;600&display=swap');
+
+/*---- General ----*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #297373;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Source Serif Pro', serif;
+
+}
+
+.logo {
+    font-family: 'Source Serif Pro', serif;
+}
+
 .header-and-footer {
     background-color: #297373;
     text-shadow: 3px 3px 3px rgba(0,0,0,0.75);
