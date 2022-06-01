@@ -19,8 +19,12 @@ h1, h2, h3, h4 {
 .header-and-footer {
     background-color: #297373;
     text-shadow: 3px 3px 3px rgba(0,0,0,0.75);
+    color: #fff;
 }
 
+.icons {
+    padding: 5px 5px;
+}
 .green-text {
     color: #297373;
 }
