@@ -11,14 +11,11 @@
 
     <!--Book Cover Card-->
     <div class="row">
+        {% for book in books %}
         <div class="col s12 m6">
         <div class="card">
             <div class="card-image">
-                <img src="images/sample-1.jpg">
-                <span class="card-title">Book Title</span>
-            </div>
-            <div class="card-content">
-                <p>Book details go here.</p>
+                <img src="{{ book.cover_url }}" alt="Book Cover for {{ book.title }}">
             </div>
             <div class="card-action">
                 <a href="#">Buy</a>
@@ -27,19 +24,20 @@
         </div>
 
     <!--Book Details Card-->
-    <div class="col s12 m6">
-        <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-            <span class="card-title">Book Title</span>
-            <p>Book details go here.</p>
+        <div class="col s12 m6">
+            <div class="card card-color">
+            <div class="card-content green-text">
+                <span class="card-title"><h4>{{ book.title }}</h4></span><br>
+                <p><strong>Author:</strong>{{ book.author }}</p><br>
+                <p><strong>Genre:</strong> {{ book.genre }}</p><br>
+                <p><strong>Synopsis:</strong> {{ book.synopsis }}</p>
+            </div>
+            <div class="card-action">
+                <a href="#">Buy</a>
+            </div>
+            </div>
         </div>
-        <div class="card-action">
-            <a href="#">Buy</a>
-        </div>
-        </div>
+    {% endfor %}
     </div>
-    </div>
-
-
 
 {% endblock %}
