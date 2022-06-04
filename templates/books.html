@@ -1,14 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-    {% for book in books %}
-        {{ book.title }}<br>
-        {{ book.author }}<br>
-        {{ book.genre }}<br>
-        {{ book.synopsis }}<br>
-        {{ book.cover_url }}<br>
-    {% endfor %}
-
     <!--Book Cover Card-->
     <div class="row">
         {% for book in books %}
