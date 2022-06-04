@@ -23,6 +23,18 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
+                    <i class="fa-solid fa-book-journal-whills prefix"></i>
+                    <select id="genre_name" name="genre_name" class="validate" required>
+                        <option value="" disabled selected>Choose Genre</option>
+                            {% for genre in genres %}
+                        <option value="{{ genre.genre_name }}">{{ genre.genre_name }}</option>
+                            {% endfor %}
+                    </select>
+                    <label for="genre_name">Genre</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
                     <i class="fa-solid fa-align-left prefix"></i>
                     <textarea id="synopsis" name="synopsis" minlength="5"
                         maxlength="150" class="materialize-textarea validate" required></textarea>

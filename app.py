@@ -99,7 +99,8 @@ def logout():
 
 @app.route("/add_book")
 def add_book():
-    return render_template("add_book.html")
+    genres = mongo.db.genre.find().sort("genre_name", 1)
+    return render_template("add_book.html", genres=genres)
 
 
 if __name__ == "__main__":
