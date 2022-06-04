@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
+    <h3 class="center-align">All Books</h3>
+
     <!--Book Cover Card-->
     <div class="row">
         {% for book in books %}
@@ -20,9 +22,10 @@
             <div class="card card-color">
             <div class="card-content green-text">
                 <span class="card-title"><h4>{{ book.title }}</h4></span><br>
-                <p><strong>Author:</strong>{{ book.author }}</p><br>
-                <p><strong>Genre:</strong> {{ book.genre_name }}</p><br>
-                <p><strong>Synopsis:</strong> {{ book.synopsis }}</p>
+                <p><strong>Author: {{ book.author }}</strong></p><br>
+                <p><strong>Genre: {{ book.genre_name }}</strong></p><br>
+                <p><strong>Synopsis: {{ book.synopsis }}</strong></p>
+                <p><em>Added By: {{ book.added_by }}</em></p>
             </div>
             <div class="card-action">
                 <a href="#">Buy</a>
