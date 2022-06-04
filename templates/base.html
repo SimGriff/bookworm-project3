@@ -53,24 +53,37 @@
         </ul>
     </header>
 
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
 <!-- footer with Scocial Media Links on Right -->
-<footer class="header-and-footer page-footer">
-    <div class="footer-copyright">
-        © 2022 Bookworm
-        <a class="right" href="https://www.facebook.com" rel="noopener" target="_blank">
-            <i class="fab fa-facebook" aria-hidden="true"></i><span class="icons">Facebook</span>
-        </a>
-        <a class="right" href="https://www.twitter.com" rel="noopener" target="_blank">
-            <i class="fab fa-twitter" aria-hidden="true"></i><span class="icons">Twitter</span>
-        </a>
-        <a class="right" href="https://www.instagram.com" rel="noopener" target="_blank">
-            <i class="fab fa-instagram" aria-hidden="true"></i><span class="icons">Instagram</span>
-        </a>
-        <a class="right" href="https://www.youtube.com" rel="noopener" target="_blank">
-            <i class="fab fa-youtube" aria-hidden="true"></i><span class="icons">Youtube</span>
-        </a>
-    </div>
-</footer>
+    <footer class="header-and-footer page-footer">
+        <div class="container">
+            <div class="row center-align">
+                <div class="col s12 m12">
+                    <a class="" href="https://www.facebook.com" rel="noopener" target="_blank">
+                        <i class="fab fa-facebook" aria-hidden="true"></i><span class="icons"></span>
+                    </a>
+                    <a class="" href="https://www.twitter.com" rel="noopener" target="_blank">
+                        <i class="fab fa-twitter" aria-hidden="true"></i><span class="icons"></span>
+                    </a>
+                    <a class="" href="https://www.instagram.com" rel="noopener" target="_blank">
+                        <i class="fab fa-instagram" aria-hidden="true"></i><span class="icons"></span>
+                    </a>
+                    <a class="" href="https://www.youtube.com" rel="noopener" target="_blank">
+                        <i class="fab fa-youtube" aria-hidden="true"></i><span class="icons"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+            © Bookworm 2022
+            </div>
+        </div>
+    </footer>
 
     <section>
         <!-- flash messages -->
@@ -84,11 +97,6 @@
             {% endif %}    
         {% endwith %}
     </section>
-
-    <main class="container">
-        {% block content %}
-        {% endblock %}
-    </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
