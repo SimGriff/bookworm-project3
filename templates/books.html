@@ -20,16 +20,20 @@
     <!--Book Details Card-->
         <div class="col s12 m6">
             <div class="card card-color">
-            <div class="card-content green-text">
-                <span class="card-title"><h4>{{ book.title }}</h4></span><br>
-                <p><strong>Author: {{ book.author }}</strong></p><br>
-                <p><strong>Genre: {{ book.genre_name }}</strong></p><br>
-                <p><strong>Synopsis: {{ book.synopsis }}</strong></p>
-                <p><em>Added By: {{ book.added_by }}</em></p>
-            </div>
-            <div class="card-action">
-                <a href="#">Buy</a>
-            </div>
+                <div class="card-content green-text">
+                    <span class="card-title"><h4>{{ book.title }}</h4></span><br>
+                    <p><strong>Author: {{ book.author }}</strong></p><br>
+                    <p><strong>Genre: {{ book.genre_name }}</strong></p><br>
+                    <p><strong>Synopsis: {{ book.synopsis }}</strong></p>
+                    <p><em>Added By: {{ book.added_by }}</em></p>
+                </div>
+                <!-- Edit and Delete buttons -->
+                <div>
+                    <a href="" class="waves-effect waves-light btn-large">
+                    <i class="fas fa-pencil left"></i>Edit</a>
+                    <a href="" class="waves-effect waves-light btn-large red darken-3">
+                    <i class="fas fa-trash-can left"></i>Delete</a>
+                </div>
             </div>
         </div>
         {% endfor %}
