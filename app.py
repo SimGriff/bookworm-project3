@@ -29,7 +29,7 @@ def get_books():
 def register():
     if request.method =="POST":
         current_user = mongo.db.users.find_one(
-            {"usename": request.form.get("username").lower()})
+            {"username": request.form.get("username").lower()})
 
         if current_user:
             flash("This username already exists")
