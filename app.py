@@ -154,7 +154,7 @@ def add_genre():
         genre = {
             "genre_name": request.form.get("genre_name")
         }
-        mongo.db.genres.insert_one(genre)
+        mongo.db.genre.insert_one(genre)
         flash("New Genre Added")
         return redirect(url_for("get_genres"))
 
