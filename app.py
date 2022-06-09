@@ -34,7 +34,7 @@ def search():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
-    if request.method =="POST":
+    if request.method == "POST":
         current_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 

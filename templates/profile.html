@@ -6,6 +6,9 @@
             <div class="card-panel card-color">
                 <h3 class="center-align">
                     {{ username }}'s Library
+                    {% if session.user %} 
+                    {% include "my_library.html" %}
+                    {% endif %}
                 </h3> 
             </div>
         </div>
