@@ -136,6 +136,7 @@ def edit_book(book_id):
         }}
         mongo.db.books.update_one({"_id": ObjectId(book_id)}, submit)
         flash("Book Successfully Updated")
+        return redirect(url_for("get_books"))
 
     book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
     genres = mongo.db.genre.find().sort("genre_name", 1)
