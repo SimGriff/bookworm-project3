@@ -91,7 +91,10 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
+        # get all books added by user
+        books = list(mongo.db.books.find({"added_by": username}))
+
+        return render_template("profile.html", username=username, books=books)
 
     return redirect(url_for("login"))
 
