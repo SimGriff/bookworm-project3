@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="center-align">Contact</h3>
+    <p>If you want to get in touch, please complete the form below and we will get back to you</p>
+    <div class="row card-panel card-color">
+        <form class="col s12" method="POST" action="{{ url_for('contact')}}">
+            <!-- first name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="Placeholder" id="first_name" type="text" minlength="2"
+                    maxlength="10" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                    <label for="first_name">First Name</label>
+                </div>
+            <!-- last name -->    
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fa-solid fa-user-pen"></i>
+                    <input id="last_name" type="text" minlength="2"
+                    maxlength="10" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <!-- email -->
+            <div class="row">
+                <div class="input-field col s12">
+                <i class="fa-solid fa-envelope"></i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <!-- comments -->
+            <div class="row">
+                <i class="fa-solid fa-pencil"></i>
+                <div class="input-field col s12">
+                    <i class="fa-solid fa-align-left prefix"></i>
+                    <textarea id="comments" name="comments" minlength="5"
+                        maxlength="400" class="materialize-textarea validate" required></textarea>
+                    <label for="comments">Your Comments</label>
+                </div>
+            </div>
+            <!-- submit -->
+            <div class="row">
+                <button type="submit" class="btn green-btn">
+                    Send<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+                <div class="form-group">
+					<button type="submit" class="btn green-btn" id="sendMessageButton">Send</button>
+				</div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
