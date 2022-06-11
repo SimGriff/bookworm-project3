@@ -54,12 +54,17 @@
                     <label for="cover_url">Cover URL</label>
                 </div>
             </div>
-            <!-- add book button -->
+            <!-- buttons -->
             <div class="row">
                 <div class="col s12 center-align">
+                    <!-- add book button -->
                     <button type="submit" class="btn-large green-btn">
                         Add Book <i class="fas fa-plus right"></i>
                     </button>
+                    <!-- cancel button -->
+                    <a href="{{ url_for('get_books') }}" class="orange-btn btn-large">
+                        Cancel <i class="fas fa-xmark right"></i>
+                    </a>
                 </div>
             </div>
         </form>

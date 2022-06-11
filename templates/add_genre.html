@@ -14,12 +14,17 @@
                     <label for="genre_name">Genre name</label>
                 </div>
             </div>
-            <!-- submit button -->
+            <!-- buttons -->
             <div class="row">
+                <!-- add genre button -->
                 <div class="col s12 center-align">
                     <button type="submit" class="btn-large green-btn">
                         Add Genre <i class="fas fa-plus right"></i>
                     </button>
+                    <!-- cancel button -->
+                    <a href="{{ url_for('get_books') }}" class="orange-btn btn-large">
+                        Cancel <i class="fas fa-xmark right"></i>
+                    </a>
                 </div>
             </div>
         </form>
