@@ -1,3 +1,9 @@
+"""
+Code Institute Task Manager Mini Project followed
+and adapted for this project
+
+"""
+
 import os
 from flask import (
     Flask, flash, render_template, 
@@ -21,12 +27,14 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_books")
 def get_books():
+    """Gets the list of books to display in books.html."""
     books = list(mongo.db.books.find())
     return render_template("books.html", books=books)
 
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """Search books in the collection by author or title."""
     query = request.form.get("query")
     books = list(mongo.db.books.find({"$text": {"$search": query}}))
     return render_template("books.html", books=books)
@@ -34,6 +42,7 @@ def search():
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """Allows a new user to register."""
     if request.method == "POST":
         current_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
@@ -57,6 +66,7 @@ def register():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """Login to users account."""
     if request.method == "POST":
         # check if username already in the database
         user_exists = mongo.db.users.find_one(
@@ -86,6 +96,7 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    """Displays books added by user."""
     # get user's username from the database
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
@@ -101,7 +112,7 @@ def profile(username):
 
 @app.route("/logout")
 def logout():
-    # remove user from session cookies
+    """Remove user from session cookies."""
     flash("You are now logged out")
     session.pop("user")
     return redirect(url_for("login"))
@@ -109,6 +120,8 @@ def logout():
 
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
+    """Adds a book to the collectio."""
+    remove user from session cookies
     if request.method == "POST":
         book_exists = mongo.db.books.find_one(
             {"title": request.form.get("title").lower()}
@@ -136,6 +149,7 @@ def add_book():
 
 @app.route("/edit_book/<book_id>", methods=["GET", "POST"])
 def edit_book(book_id):
+    """Allows a user to edit a book."""
     if request.method == "POST":
         submit = {"$set": {
             "title": request.form.get("title"),
@@ -156,6 +170,7 @@ def edit_book(book_id):
 
 @app.route("/delete_book/<book_id>")
 def delete_book(book_id):
+    """Deletes a book from the database."""
     mongo.db.books.delete_one({"_id": ObjectId(book_id)})
     flash("Book Successfully Deleted")
     return redirect(url_for("get_books"))
@@ -163,12 +178,14 @@ def delete_book(book_id):
 
 @app.route("/get_genres")
 def get_genres():
+    """Allows admin to manage genres."""
     genres = list(mongo.db.genre.find().sort("genre_name", 1))
     return render_template("genres.html", genres=genres)
 
 
 @app.route("/add_genre", methods=["GET", "POST"])
 def add_genre():
+    """Allows admin to adds a new genre."""
     if request.method == "POST":
         genre = {
             "genre_name": request.form.get("genre_name")
@@ -182,6 +199,7 @@ def add_genre():
 
 @app.route("/edit_genre/<genre_id>", methods=["GET", "POST"])
 def edit_genre(genre_id):
+    """Allows admin to edit a genre."""
     if request.method == "POST":
         submit = {"$set": {
             "genre_name": request.form.get("genre_name")
@@ -196,6 +214,7 @@ def edit_genre(genre_id):
 
 @app.route("/delete_genre/<genre_id>")
 def delete_genre(genre_id):
+    """Allows admin to delete a genre from the database."""
     mongo.db.genre.delete_one({"_id": ObjectId(genre_id)})
     flash("Genre Successfully Deleted")
     return redirect(url_for("get_genres"))
