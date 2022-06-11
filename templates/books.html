@@ -39,23 +39,25 @@
                     </div>
                     <div class="card-action">
                         <!-- buttons -->
-                        {% if session.user|lower == book.added_by | lower or session.user == "admin" %}
+                        {% if session.user|lower == book.added_by|lower or session.user == "admin" %}
                         <!-- edit button -->
-                        <a href="{{ url_for('edit_book', book_id=book._id) }}" class="waves-effect waves-light btn-large">
-                            <i class="fas fa-pencil left"></i>Edit</a>    
+                        <a href="{{ url_for('edit_book', book_id=book._id) }}" class="waves-effect waves-light teal darken-3 btn-large">
+                        <i class="fas fa-pencil left"></i>Edit</a>    
                         <!-- delete button modal -->
-                            <a href="#modal1" class="waves-effect waves-light btn modal-trigger">
-                                <i class="fas fa-trash-can left"></i>Delete</a>
-                                <div id="modal1" class="modal">
-                                    <div class="modal-content">
-                                    <h4>Confirm Deletion</h4>
-                                    <a href="{{ url_for('delete_book', book_id=book._id) }}" class="btn-small green accent-4">
-                                        <i class="fas fa-trash-can left"></i>Delete</a>  
-                                    </div>
-                                    <div class="modal-footer">
-                                    <a href="" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
-                                    </div>
+                        <a href="#{{book._id}}" class="waves-effect waves-light btn-large orange-btn modal-trigger center-align">
+                            <i class="fas fa-trash-can left"></i>Delete</a>
+                            <div id="{{book._id}}" class="modal center-align">
+                                <div class="modal-content">
+                                <h4>Confirm Deletion</h4>
+                                <!-- delete confirmation button -->
+                                <a href="{{ url_for('delete_book', book_id=book._id) }}" class="btn-large orange-btn">
+                                    <i class="fas fa-trash-can left"></i>Delete</a>  
                                 </div>
+                                <!-- cancel button -->
+                                <div class="modal-footer center-align">
+                                <a href="" class="modal-close btn-flat">Cancel</a>
+                                </div>
+                            </div>
                         {% endif %}
                     </div>
                 </div>
