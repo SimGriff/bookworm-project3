@@ -121,7 +121,6 @@ def logout():
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     """Adds a book to the collectio."""
-    remove user from session cookies
     if request.method == "POST":
         book_exists = mongo.db.books.find_one(
             {"title": request.form.get("title").lower()}
