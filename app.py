@@ -135,6 +135,8 @@ def add_book():
                 "author": request.form.get("author"),
                 "genre_name": request.form.get("genre_name"),
                 "synopsis": request.form.get("synopsis"),
+                "review": request.form.get("review"),
+                "rating": int(request.form.get("rating")),
                 "cover_url": request.form.get("cover_url"),
                 "added_by": session["user"]
             }
@@ -155,6 +157,8 @@ def edit_book(book_id):
             "author": request.form.get("author"),
             "genre_name": request.form.get("genre_name"),
             "synopsis": request.form.get("synopsis"),
+            "review": request.form.get("review"),
+            "rating": int(request.form.get("rating")),
             "cover_url": request.form.get("cover_url"),
             "added_by": session["user"]
         }}

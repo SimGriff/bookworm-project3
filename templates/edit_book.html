@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fa-solid fa-book prefix"></i>
-                    <input id="title" name="title" minlength="2" maxlength="15"
+                    <input id="title" name="title" minlength="2" maxlength="30"
                         value="{{ book.title }}" type="text" class="validate" required>
                     <label for="title">Book Title</label>
                 </div>
@@ -45,10 +45,36 @@
                 <div class="input-field col s12">
                     <i class="fa-solid fa-align-left prefix"></i>
                     <textarea id="synopsis" name="synopsis" minlength="5"
-                        maxlength="250" class="materialize-textarea validate" required>
+                        maxlength="300" class="materialize-textarea validate" required>
                         {{- book.synopsis -}}
                     </textarea>
                     <label for="synopsis">Synopsis</label>
+                </div>
+            </div>
+            <!-- review -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fa-solid fa-align-left prefix"></i>
+                    <textarea id="review" name="review" minlength="5"
+                        maxlength="50" class="materialize-textarea validate" required>
+                        {{- book.review -}}
+                    </textarea>
+                </div>
+            </div>
+            <!-- rating -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fa-solid fa-thumbs-up prefix"></i>
+                    <label for="rating">Rate Book</label>
+                        <select name="rating" id="rating">
+                            <option disabled selected value></option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
                 </div>
             </div>
             <!-- cover url -->
