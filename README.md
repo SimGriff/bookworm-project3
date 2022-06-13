@@ -100,11 +100,21 @@ Once these two fields are completed the user has to press the Register button. I
 * Contact
 The Contact navigation link is available to logged in/out users and unregistered visitors. Once selected the user is presented with a contact form with four fields, First Name, Last Name, Email and Your Comments. There is a send button at the bottom centre of the form.
 
+## Database Schema
+There are three collections in the MongoDB database:
+1. users
+2. books
+3. genres
+
+The database schema is shown below.
+![database schema](static/images/screenshots/database-schema.png)
+
+
 ---
 
 ## Design
 ### Colour Scheme
-*I used [Coolors](https://coolors.co/) to generate a colour scheme, I chose this particular colour scheme because I did not want to go with the usual browns of a book review site. I wanted the site to stand out from other book review sites by including a more colourful palette.
+I used [Coolors](https://coolors.co/) to generate a colour scheme, I chose this particular colour scheme because I did not want to go with the usual browns of a book review site. I wanted the site to stand out from other book review sites by including a more colourful palette.
 
 ![palette used for Project 3](static/images/screenshots/palette.png)
 
