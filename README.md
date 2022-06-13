@@ -4,11 +4,15 @@
 
 View the deployed site [here:](https://bookworm-project3.herokuapp.com/)
 
-## Introduction
+## User Experience (UX)
+
+---
+
+### Introduction
 Bookworm is an interactive book review site for all book fans. The site allows registered users to search through the listed books for reviews and find their next book. Bookworm allows users to share their book reviews with fellow book lovers on the site. The site also allows registered users to keep a library of their own added books on their profile page. 
 
 ---
-## User Experience (UX)
+
 ### User Stories 
 
 - Unregistered User
@@ -38,10 +42,10 @@ Bookworm is an interactive book review site for all book fans. The site allows r
     10. As the site owner, I want to be able to reset a user’s password.
     11. As the site owner, I want to be able to delete a user’s account.  
 
-
 ---
-## Features
-### Current Features
+
+### Features
+#### Current Features
 
 * Site is responsive on all screen sizes.
 * Nav menu adjusts accordingly to unregistered, registered users and Admin depending on the users log in status.
@@ -60,7 +64,7 @@ Bookworm is an interactive book review site for all book fans. The site allows r
 * Contact Page allows user to contact site owner.
 * Flash messages providing user feedback for registered users when initially registered, logged in, logged out.
 
-### Future Features
+#### Future Features
 
 * Registered Users can review books before adding them to the site.
 * Admin users can edit the users password.
@@ -72,7 +76,7 @@ Bookworm is an interactive book review site for all book fans. The site allows r
 
 ---
 
-## Structure
+### Structure
 * Home Page
 All users can view the Home page whether they are logged in or not. The Search bar is visible at the top of this page for logged in or out users and they are able to search books on the database by author or title. 
 All books in the database are list on the home page. Users are presented with additional edit and delete buttons at the bottom of each book card, allowing them to edit or delete their own books. The admin user will have the edit and delete buttons at the bottom of every book card, enabling admin to delete or edit any book in the database.
@@ -100,7 +104,7 @@ Once these two fields are completed the user has to press the Register button. I
 * Contact
 The Contact navigation link is available to logged in/out users and unregistered visitors. Once selected the user is presented with a contact form with four fields, First Name, Last Name, Email and Your Comments. There is a send button at the bottom centre of the form.
 
-## Database Schema
+#### Database Schema
 There are three collections in the MongoDB database:
 1. users
 2. books
@@ -109,11 +113,10 @@ There are three collections in the MongoDB database:
 The database schema is shown below.
 ![database schema](static/images/screenshots/database-schema.png)
 
-
 ---
 
-## Design
-### Colour Scheme
+### Design
+#### Colour Scheme
 I used [Coolors](https://coolors.co/) to generate a colour scheme, I chose this particular colour scheme because I did not want to go with the usual browns of a book review site. I wanted the site to stand out from other book review sites by including a more colourful palette.
 
 ![palette used for Project 3](static/images/screenshots/palette.png)
@@ -124,20 +127,19 @@ The main colour used on all nav bars and footers was #297373 with the lighter #C
 
 [Adobe Color-Wheel](https://color.adobe.com/create/color-wheel) was used to match a complimentary colour for all buttons on the #297373 background, #F7C9AD was chosen as this colour stood out and highlighted the buttons on the page.
 
-### Typography
+#### Typography
 
 I used [Google Fonts](https://fonts.google.com/) to import the fonts used for this site. 
 The __Source Serif Pro__ font is used for all headers and titles. Designed by Frank Grießhammer, from the Adobe Originals program started in 1989 as an in-house type foundry at Adobe.
 __Source Sans Pro__ was designed to perfectly compliment Source Serif Pro, I used the Source Sans Pro font for the main text throughout the site. Both fonts work perfectly together, they are easy to read and help convey the subject of the site.
 Both fonts are fully cleared for both personal and commercial use.
 
-### Imagery
+#### Imagery
 I have not used a background image on this site because I felt it would distract from the main focus of the site, the actual books with their cover images. Book cover images were taken directly from [Amazon](https://www.amazon.co.uk/).
 
 Icons from [Font Awesome](https://fontawesome.com/) are used throughout the site. The icons help inform the user of the purpose of a particular section and lead to a more enjoyable user experience. I have also used a Font Awesome icon as my main logo displayed throughout the site <i class="fa-solid fa-book-open"></i>
 
----
-## Wireframes
+#### Wireframes
 
 The wireframes for the Bookworm site were produced using Balsamiq. 
 * Mobile Wireframes:
@@ -166,16 +168,16 @@ The wireframes for the Bookworm site were produced using Balsamiq.
 
 ---
 
-## Technologies Used
+### Technologies Used
 
-### Languages Used
+#### Languages Used
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScrip](https://www.javascript.com/)
 * [Python3](https://www.python.org/)
 
-### Frameworks, Libraries & Programs Used
+#### Frameworks, Libraries & Programs Used
 
 * [Balsamiq:](https://balsamiq.com/)
 Balsamiq was used to create the wireframes during the design process.
@@ -202,5 +204,33 @@ Github was used to host and deploy the website.
 * [Heroku:](https://id.heroku.com/)
 For deploying the application.
 
+---
+
+### Testing
+
+#### W3C Markup Validation Results
+#### W3C Vilidator Results
+#### JSHint Results
+#### Pep8 Validation
+#### Lighthouse Testing
+#### Testing User Stories
+#### Manual Testing
+#### Bugs
 
 ---
+
+### Deployment
+
+---
+
+### Credits
+
+#### Code
+#### Content
+#### Media
+#### Acknowledgements
+
+
+
+
+### Deployment
