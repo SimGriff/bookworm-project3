@@ -2,7 +2,7 @@
 
 ![Screenshot of mockup](#)
 
-View the deployed site [here:]()
+View the deployed site [here:](https://bookworm-project3.herokuapp.com/)
 
 ## Introduction
 Bookworm is an interactive book review site for all book fans. The site allows registered users to search through the listed books for reviews and find their next book. Bookworm allows users to share their book reviews with fellow book lovers on the site. The site also allows registered users to keep a library of their own added books on their profile page. 
@@ -101,63 +101,27 @@ Icons from [Font Awesome](https://fontawesome.com/) are used throughout the site
 The wireframes for the Bookworm site were produced using Balsamiq. 
 * Mobile Wireframes:
   - [Home Logged Out/Not Registered Page](static/wireframes/home-logged-out-mobile.png)
-  - [Search Page Unregistered Page](static/wireframes/………… png)
   - [Register Page](static/wireframes/register-mobile.png)
   - [Log In Page](static/wireframes/login-mobile.png)
   - [Profile Page](static/wireframes/profile-mobile.png)
   - [Add Book Page](static/wireframes/add-book-mobile.png)
   - [Edit Book Page](static/wireframes/edit-book-mobile.png)
-  - [Add Review Page](static/wireframes/…………..png)
-  - [Edit Review Page](static/wireframes/…………..png)
   - [Admin Profile Page](static/wireframes/admin-profile-mobile.png)
   - [Admin Manage Genres](static/wireframes/manage-genres-mobile.png)
   - [Admin Manage Users](static/wireframes/…………..png)
-  - [Contact Page](static/wireframes/Contact Page- Mobile.png)
+  - [Contact Page](static/wireframes/contact-page-mobile.png)
 
 * Desktop Wireframes:
   - [Home Logged Out/Not Registered Page](static/wireframes/home-logged-out-desktop.png)
-  - [Search Page Unregistered Page](static/wireframes/………… png)
   - [Register Page](static/wireframes/register-desktop.png)
   - [Log In Page](static/wireframes/logged-in-desktop.png)
   - [Profile Page](static/wireframes/profile-desktop.png)
   - [Add Book Page](static/wireframes/add-book-desktop.png)
   - [Edit Book Page](static/wireframes/edit-book-desktop.png)
-  - [Add Review Page](static/wireframes/…………..png)
-  - [Edit Review Page](static/wireframes/…………..png)
   - [Admin Profile Page](static/wireframes/admin-profile-desktop.png)
   - [Admin Manage Genres](static/wireframes/manage-genres-desktop.png)
   - [Admin Manage Users](static/wireframes/…………..png)
-  - [Contact Page](static/wireframes/Contact Page- Desktop.png)
-
+  - [Contact Page](static/wireframes/contact-page-desktop.png)
 
 ---
-## Wireframes
-The wireframes for the Bookworm site were produced using Balsamiq. 
-* Mobile Wireframes:
-  - [Home Unregistered Page](static/wireframes/Home - Not Logged In - Mobile.png)
-  - [Search Page Unregistered Page](static/wireframes/………… png)
-  - [Register Page](static/wireframes/Register Screen - Mobile.png)
 
-  - [Log In Page](static/wireframes/Log In Screen - Mobile.png)
-  - [Profile Page](static/wireframes/Profile - Logged In - Mobile.png)
-  - [Add Book Page](static/wireframes/Add Book Screen - Mobile.png)
-  - [Edit Book Page](static/wireframes/Edit Book Screen - Mobile.png)
-  - [Add Review Page](static/wireframes/…………..png)
-  - [Edit Review Page](static/wireframes/…………..png)
-  - [Admin Profile Page](static/wireframes/Profile - Admin Logged In - Mobile.png)
-  - [Admin Manage Genres](static/wireframes/Admin Manage Genres - Mobile.png)
-  - [Admin Manage Users](static/wireframes/…………..png)
-  - [Contact Page](static/wireframes/Contact Page - Mobile.png)
-* Desktop Wireframes:
-  - [Home Unregistered Page](static/wireframes/Home - Not Logged In - Desktop.png)
-  - [Register Page](static/wireframes/Register Screen - Desktop.png)
-  - [Log In Page](static/wireframes/Log In Screen - Desktop.png)
-  - [Profile Page](static/wireframes/Profile - Admin Logged In - Desktop.png)
-  - [Add Book Page]( static/wireframes/Add Book Screen - Desktop.png)
-  - [Edit Book Page](static/wireframes/Edit Book Screen - Desktop.png)
-  - [Add Review Page](static/wireframes/…………..png)
-  - [Edit Review Page](static/wireframes/…………..png)
-  - [Admin Profile Page](static/wireframes/Profile - Admin Logged In - Desktop.png)
-  - [Admin Manage Genres](static/wireframes/Admin Manage Genres - Desktop.png)
-  - [Admin Manage Users](static/wireframes/…………..png)
-  - [Contact Page](static/wireframes/Contact Page - Desktop.png)
