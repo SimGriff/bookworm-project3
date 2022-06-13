@@ -3,7 +3,6 @@ Code Institute Task Manager Mini Project followed
 and adapted for this project
 
 """
-
 import os
 from flask import (
     Flask, flash, render_template,
