@@ -156,3 +156,41 @@ The wireframes for the Bookworm site were produced using Balsamiq.
 
 ---
 
+## Technologies Used
+
+### Languages Used
+
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScrip](https://www.javascript.com/)
+* [Python3](https://www.python.org/)
+
+### Frameworks, Libraries & Programs Used
+
+* [Balsamiq:](https://balsamiq.com/)
+Balsamiq was used to create the wireframes during the design process.
+* [Google Fonts:](https://fonts.google.com/)
+Google fonts were used to import the fonts used in this project.
+* [MongoDB:](https://www.mongodb.com/) 
+Cloud based database was used for all collections.
+* [Flask:](https://flask.palletsprojects.com/en/2.1.x/) 
+Micro framework used to build my application.
+* [Materialize:](https://materializecss.com/)
+Used for the structure, Navbar, Footer, Cards code used and modified for this project. 
+* [Chrome DevTools:](https://developer.chrome.com/docs/devtools/)
+Used throughout the project to view and edit the site in real time and discover issues and solutions.
+* [Adobe Color:](https://color.adobe.com/create/color-contrast-analyzer)
+The contrast checker used for this project.
+* [Techsini:](https://techsini.com/multi-mockup/index.php)
+To produce mockup image across multiple devices.
+* [Gitpod:](https://gitpod.io/projects)
+This was the code editor used throughout the project.
+* [Git:](https://git-scm.com/)
+Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+* [GitHub:](https://github.com/)
+Github was used to host and deploy the website.
+* [Heroku:](https://id.heroku.com/)
+For deploying the application.
+
+
+---
