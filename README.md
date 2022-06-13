@@ -22,24 +22,22 @@ Bookworm is an interactive book review site for all book fans. The site allows r
     1. As a registered user, I want to be able to login and logout of the site.
     2. As a registered user, I want to be able to search for books.
     3. As a registered user, I want to be able to add books.
-    4. As a registered user, I want to be able to view all books that I have added to _‘My Library’_.
+    4. As a registered user, I want to be able to view all books that I have added on my profile page.
     5. As a registered user, I want to be able to write reviews about any book.
     6. As a registered user, I want to be able to edit my books and my reviews.
-    7. As a registered user, I want to be able to delete my books and my reviews.
+    7. As a registered user, I want to be able to delete my books.
     8. As a registered user, I should not be able to delete or edit other user’s books.
 
 - Site Admin
     1. As the site owner, I want to be able to add books.
     2. As the site owner, I want to be able to edit any book.
     3. As the site owner, I want to be able to delete any book.
-    4. As the site owner, I want to be able to add a review.
-    5. As the site owner, I want to be able to edit any review.
-    6. As the site owner, I want to be able to delete any review.
     7. As the site owner, I want to be able to add a genre.
     8. As the site owner, I want to be able to edit a genre.
     9. As the site owner, I want to be able to delete a genre.
     10. As the site owner, I want to be able to reset a user’s password.
     11. As the site owner, I want to be able to delete a user’s account.  
+
 
 ---
 ## Features
@@ -47,8 +45,8 @@ Bookworm is an interactive book review site for all book fans. The site allows r
 
 * Site is responsive on all screen sizes.
 * Nav menu adjusts accordingly to unregistered, registered users and Admin depending on the users log in status.
-* Identical footer displayed across the site to provide continuity.
-* Search bar on home page and profile page enables both registered and unregistered users to search for books by book title.
+* Identical footer and Navigation bar displayed across the site to provide continuity.
+* Search bar on home page and profile page enables both registered and unregistered users to search for books by book title or author.
 * Site visitors can register on the site.
 * Registered users can log in and out of the site.
 * Registered users can add books to the site, the book will also be displayed in their Library shown on their Profile page.
@@ -60,15 +58,17 @@ Bookworm is an interactive book review site for all book fans. The site allows r
 * Cancel buttons are also shown alongside edit and delete buttons in case the user changes their mind and wants to cancel changes.
 * Social Media Links displayed in the footer on all pages.
 * Contact Page allows user to contact site owner.
-* The Bookworm site has the identical navbar and footer displayed on each page.
+* Flash messages providing user feedback for registered users when initially registered, logged in, logged out.
 
 ### Future Features
 
 * Registered Users can review books before adding them to the site.
-* Flash messages providing user feedback for registered users when initially registered, logged in, logged out.
 * Admin users can edit the users password.
 * Admin users can delete any users account.
 * Pagination for the Home and Profile Pages
+* Separate review section linked to the book for more in depth reviews.
+* Allow all users to review any book and to rate the book
+* Function to add all rating scores provide an average overall rating for the book.
 
 ---
 ## Design
