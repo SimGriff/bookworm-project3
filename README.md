@@ -71,6 +71,37 @@ Bookworm is an interactive book review site for all book fans. The site allows r
 * Function to add all rating scores provide an average overall rating for the book.
 
 ---
+
+## Structure
+* Home Page
+All users can view the Home page whether they are logged in or not. The Search bar is visible at the top of this page for logged in or out users and they are able to search books on the database by author or title. 
+All books in the database are list on the home page. Users are presented with additional edit and delete buttons at the bottom of each book card, allowing them to edit or delete their own books. The admin user will have the edit and delete buttons at the bottom of every book card, enabling admin to delete or edit any book in the database.
+* Profile
+The profile navigation link is only available to logged in users. Once selected, the user is taken to their own Library page with their username and Library as a heading. Books added by the user are displayed along with the edit and delete buttons to manage their library.
+
+* Add Book
+The add book menu item is available to all logged in users. Once selected, the user is presented with a form where the user is required to complete all fields including, Book Title, Author, Genre(a dropdown list selection displays all available genres), Synopsis. There is also a field for Review, where the user can input a short comment on the book, this is followed by a Rate Book field where the user can select from the dropdown field a score between 0 and 5. Finally there is a field for the Cover URL to display the books cover on the database. There is an additional Add Book button at the bottom to submit the form along with a cancel button to allow the user to come out of the form if they entered there by mistake.
+
+* Manage Genres
+This navigation link is only available to the admin user when logged in. 
+Once selected, the admin user is presented with a page of cards displaying each genre on the database along with an edit and delete button to edit or delete existing genres on the database.
+At the top centre of the page there is an Add Genre button allowing the user to add a new genre to the database, once selected the admin user is presented with a form with a single text input to enter the new genre. There is also an Add Genre button and delete button on the card to either submit or cancel out of the form.  
+
+* Log Out
+The Log Out navigation link is only available to logged in users. This allows the current user to log out, once selected they are presented with a flash message “You are now logged out”, the user is also redirected to the Log In screen.
+
+* Log In
+The Log In navigation link is available to all logged out or unregistered users. There is a simple form with two test inputs for Username and Password, both have to match to allow the user access. Once these two fields are completed the user has to press the Log In button. If a user does not complete a field a please fill out this field message is displayed. If a user enters an incorrect username and or password a flash message is displayed prominently across the top of the page “Incorrect Username and/or Password, please try again”. There is also a message displayed at the bottom of the Log In screen, “New to Bookworm? Register Here!” With Register Here! Taking the visitor to the Register page.
+
+* Register
+The Register navigation link is available to all logged out or unregistered users. There is a simple form with two test inputs for Username and Password, the Username and Password fields have to be between 5 and 15 characters a-z, A-Z or 0-9, no special characters allowed. 
+Once these two fields are completed the user has to press the Register button. If a user does not complete a field in the correct format a message is displayed “Please match the selected format”. If a user enters a valid username and password a flash message is displayed prominently across the top of the page “You have successfully registered!”. The new user is directed to their profile page.
+
+* Contact
+The Contact navigation link is available to logged in/out users and unregistered visitors. Once selected the user is presented with a contact form with four fields, First Name, Last Name, Email and Your Comments. There is a send button at the bottom centre of the form.
+
+---
+
 ## Design
 ### Colour Scheme
 *I used [Coolors](https://coolors.co/) to generate a colour scheme, I chose this particular colour scheme because I did not want to go with the usual browns of a book review site. I wanted the site to stand out from other book review sites by including a more colourful palette.
