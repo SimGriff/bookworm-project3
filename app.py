@@ -6,8 +6,8 @@ and adapted for this project
 
 import os
 from flask import (
-    Flask, flash, render_template, 
-    redirect, request, session, url_for) 
+    Flask, flash, render_template,
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -51,11 +51,11 @@ def register():
             flash("This username already exists")
             return redirect(url_for("register"))
 
-        register = {
+        reg = {
             "username": request.form.get("username").lower(),
             "password": generate_password_hash(request.form.get("password"))
         }
-        mongo.db.users.insert_one(register)
+        mongo.db.users.insert_one(reg)
 
         session["user"] = request.form.get("username").lower()
         flash("You have successfully registered!")
@@ -75,12 +75,12 @@ def login():
         if user_exists:
             # make sure hashed password matches user input
             if check_password_hash(
-                user_exists["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(
-                        request.form.get("username")))
-                    return redirect(url_for(
-                        "profile", username=session["user"]))
+                    user_exists["password"], request.form.get("password")):
+                        session["user"] = request.form.get("username").lower()
+                        flash("Welcome, {}".format(
+                            request.form.get("username")))
+                        return redirect(url_for(
+                            "profile", username=session["user"]))
             else:
                 # password does not match
                 flash("Incorrect Username and/or Password, please try again")
@@ -129,20 +129,20 @@ def add_book():
         if book_exists:
             flash("This book already exists")
             return redirect(url_for("add_book"))
-        else:
-            book = {
-                "title": request.form.get("title"),
-                "author": request.form.get("author"),
-                "genre_name": request.form.get("genre_name"),
-                "synopsis": request.form.get("synopsis"),
-                "review": request.form.get("review"),
-                "rating": int(request.form.get("rating")),
-                "cover_url": request.form.get("cover_url"),
-                "added_by": session["user"]
-            }
-            mongo.db.books.insert_one(book)
-            flash("Book Successfully Added")
-            return redirect(url_for("get_books"))
+
+        book = {
+            "title": request.form.get("title"),
+            "author": request.form.get("author"),
+            "genre_name": request.form.get("genre_name"),
+            "synopsis": request.form.get("synopsis"),
+            "review": request.form.get("review"),
+            "rating": int(request.form.get("rating")),
+            "cover_url": request.form.get("cover_url"),
+            "added_by": session["user"]
+        }
+        mongo.db.books.insert_one(book)
+        flash("Book Successfully Added")
+        return redirect(url_for("get_books"))
 
     genres = mongo.db.genre.find().sort("genre_name", 1)
     return render_template("add_book.html", genres=genres)
@@ -234,4 +234,4 @@ def contact():
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
