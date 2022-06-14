@@ -5,6 +5,7 @@
 
     <div class="row">
         <div class="col s12 center-align">
+            <!-- add genre button -->
             <a href="{{ url_for('add_genre') }}" class="btn-large green-btn btn">
                 Add Genre <i class="fas fa-plus right"></i>
             </a>
@@ -13,11 +14,13 @@
 
     <div class="row">
         {% for genre in genres %}
+            <!-- genre cards -->
             <div class="col s12 m3">
                 <div class="card card-color center-align">
                     <div class="card-content">
                         <span class="card-title">{{ genre.genre_name }}</span>
                     </div>
+                    <!-- buttons -->
                     <div class="card-action">
                         <a href="{{ url_for('edit_genre', genre_id=genre._id)}}" class="btn green-btn">Edit</a>
                         <a href="{{ url_for('delete_genre', genre_id=genre._id)}}" class="btn orange-btn">Delete</a>

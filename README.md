@@ -121,11 +121,13 @@ I used [Coolors](https://coolors.co/) to generate a colour scheme, I chose this 
 
 ![palette used for Project 3](static/images/screenshots/palette.png)
 
-The colours chosen are intended to convey the feeling of relaxation and calmness when reading a book, while also attracting new user to the site. I selected only three of the colours to keep the site simple and less busy. 
+The colours chosen are intended to convey the feeling of relaxation and calmness when reading a book, while also attracting new user to the site. I selected only three of the colours to keep the site simple and less busy, with white as an additional colour for some text. 
 
-The main colour used on all nav bars and footers was #297373 with the lighter #CCFFFF to ensure excellent readability. The main background colour was left as white #ffffff to ensure the book covers stood out on the page. This background colour was also perfect to use the #297373 again for the text. All cards use the colour #E6E6E6 from my colour palette with the text colour of #297373, once again ensuring that it could be easily read and complimented the background colour. 
+The main colour used on all nav bars and footers was #297373 with white text to ensure excellent readability. The main background colour was left as white #ffffff to ensure the book cards stood out on the page. This background colour was also perfect to use the #297373 again for the text. All cards use the colour #E6E6E6 from my colour palette with the text colour of #297373, once again ensuring that it could be easily read and complimented the background colour. 
 
-[Adobe Color-Wheel](https://color.adobe.com/create/color-wheel) was used to match a complimentary colour for all buttons on the #297373 background, #F7C9AD was chosen as this colour stood out and highlighted the buttons on the page.
+[Adobe Color-Wheel](https://color.adobe.com/create/color-wheel) was used to match a complimentary colour for all edit/add buttons on the #297373 background, #fff was chosen as this colour stood out and highlighted the buttons on the page. All Cancel/Delete buttons are #FF8552 with white text #fff.
+All text passed on the contrast checker on the [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) using the corresponding hex values for the  analyser ensuring excellent readability. 
+
 
 #### Typography
 
@@ -209,6 +211,7 @@ For deploying the application.
 ### Testing
 
 #### W3C Markup Validation Results
+
 #### W3C Vilidator Results
 #### JSHint Results
 #### Pep8 Validation
