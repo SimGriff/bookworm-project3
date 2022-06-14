@@ -1,7 +1,7 @@
 {% block content %}
 <div class="col s12 m7">
     {% for book in books %}
-        <div class="card horizontal card-color">
+        <div class="card horizontal valign-wrapper card-color">
             <div class="card-image">
                 <img src="{{ book.cover_url }}" alt="Book Cover for {{ book.title }}">
             </div>
