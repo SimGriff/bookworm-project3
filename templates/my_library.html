@@ -16,7 +16,7 @@
                     <br>
                     <p><em>Added By: {{ book.added_by }}</em></p>
                 </div>
-                <div class="card-action">
+                <div class="card-action center">
                     <!-- buttons -->
                     {% if session.user|lower == book.added_by|lower or session.user == "admin" %}
                     <!-- edit button -->
