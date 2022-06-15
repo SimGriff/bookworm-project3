@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a book sharing and review app">
+    <meta name="keywords" content="book, books, book reviews, book ratings">
+    <meta name="author"  content="Simon Griffiths">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
@@ -19,7 +22,7 @@
         <nav class="header-and-footer nav-extended">
             <div class="nav-wrapper">
                 <a href="{{ url_for('get_books') }}" class="brand-logo logo left"><i class="fas fa-book-open prefix hide-on-small-only"></i>Bookworm</a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right" aria-label="side navigation"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('get_books') }}">Home</a></li>
                 {% if session.user %}
