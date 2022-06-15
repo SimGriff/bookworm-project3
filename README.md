@@ -280,8 +280,13 @@ The Validator results from the [W3C CSS Validation Service](https://jigsaw.w3.or
 Python was checked to [PEP8](http://pep8online.com/) compliance and passed with no issues.
 
 ### Lighthouse Testing
+
+
 ### Testing User Stories
+
 ### Manual Testing
+
+
 ### Bugs
 
 ---
