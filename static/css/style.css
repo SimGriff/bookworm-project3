@@ -36,7 +36,11 @@ h1, h2, h3, h4 {
 }
 
 .card-color {
-    background-color: #eeebeb;
+    background-color: #E6E6E6;
+}
+
+.input-field>label {
+    color:black
 }
 
 .flash h4 {
