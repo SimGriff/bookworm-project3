@@ -126,7 +126,7 @@ The colours chosen are intended to convey the feeling of relaxation and calmness
 
 The main colour used on all nav bars and footers was #297373 with white text to ensure excellent readability. The main background colour was left as white #ffffff to ensure the book cards stood out on the page. This background colour was also perfect to use the #297373 again for the text. All cards use the colour #E6E6E6 from my colour palette with the text colour of #297373, once again ensuring that it could be easily read and complimented the background colour. 
 
-[Adobe Color-Wheel](https://color.adobe.com/create/color-wheel) was used to match a complimentary colour for all edit/add buttons on the #297373 background, #fff was chosen as this colour stood out and highlighted the buttons on the page. All Cancel/Delete buttons are #FF8552 with white text #fff.
+[Adobe Color-Wheel](https://color.adobe.com/create/color-wheel) was used to match a complimentary colour for all edit/add buttons on the #297373 background, #ffffff was chosen as this colour stood out and highlighted the buttons on the page. All Cancel/Delete buttons are #FF8552 with white text #ffffff.
 All text passed on the contrast checker on the [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) using the corresponding hex values for the  analyser ensuring excellent readability. 
 
 ---
@@ -358,8 +358,38 @@ When a user selected the delete button a message box is displayed asking the use
 * The Profile Navigation Link only displays for logged in users. Once selected the users’ name appears at the top of the Library Page along with all the books added by that user. When admin is logged in they have access to the entire collection of books on the database with full edit and delete access.
 * The Social Media links on the footer direct the user to the relevant social media sites.
 
+---
 
 ### Bugs
+
+### Fixed Bugs
+
+* Log Out Flash message
+The Flash message “You are now logged out” would not appear, I discovered that in my logout function I had stated *‘session.clear()’*, I changed this to *‘session.pop(“user”)’* and it resolved the issue with the relevant flash message displayed on Logout.
+
+* Book Genre Selection
+I tried everything to fix the issue with the dropdown selection not functioning for the Genre selection, eventually after carefully inspecting my code I discovered that in my add_book function I had typed genre=mongo.db.genres, where the Mongo DB collection name was ‘genre’, correcting this typo led to a fully functioning Genre dropdown selection.
+
+* Modal problems
+I introduced a feature to seek deletion confirmation  in the form of a modal. During testing of this feature I discovered that the modal did work, but did not delete the selected book, it deleted the first book in the list. I did a lot of searching and eventually came across a post in ‘stackoverflow’ at https://stackoverflow.com/questions/67980542/delete-data-with-confirmation-modal where a I realised I had not identified the actual book by using {{ book_id }}, once this was corrected the delete button removed the correct button from the database.<br>
+
+![modal-bug](static/images/screenshots/modal-bug.png), 
+
+
+* Layout issues
+During ongoing testing during the development of this site I discovered that my content displayed on the home page and Profile Pages were not displaying as anticipated. I intended to display one book card in each row with the book’s cover image on the left and the books text appearing on the right. This worked well up until small screens of 425px and below, where both the image and text were squashed within their column, this meant that the text was very difficult to read.<br> 
+
+![layout-squashed](static/images/screenshots/layout-squashed.png)<br>
+
+Using the ‘card horizontal’ Materialize class. As I was using Materialise in this project for the first time I was unfamiliar with all the classes involved and default style values etc. I researched the issue thoroughly, but was unable to find any answers to my particular issue. Eventually, following a chat with Ed at Tutor Support, he was able to point me in the right direction by explaining that the ‘card horizontal’ Materialize class has it flex-direction set to row by default, to try changing this to flex-direction column. I applied this setting via media queried to the smaller screen size and this resolved the issue.<br>
+ 
+ ![layout-fix](static/images/screenshots/layout-fixed.png)
+
+
+
+### Unfixed Bugs
+* Users can enter a book title more than once on the site if the spelling is incorrect or missing out ‘The’ at the start of the title.
+
 
 ---
 
@@ -370,11 +400,36 @@ When a user selected the delete button a message box is displayed asking the use
 ## Credits
 
 ### Code
-### Content
+* Task Manager Mini Project
+This was an invaluable resource for this project and helped me with the overall structure  for this project.
+* [Materialize:](https://materializecss.com/)
+Materialize library used and adapted to my meet my project requirements including code for footer, navbar, dropdown, cards, colour codes and more.
+* [Stack Overflow:](https://stackoverflow.com/)
+Stack Overflow was referred to on numerous occasions during the development of this project. It was a useful resource for finding out how functions and javaScript worked in general. Code was used from the site in the following instance.
+I referenced this post in *stackoverflow* https://stackoverflow.com/questions/67980542/delete-data-with-confirmation-modal to fix my Modal issue as mentioned in the Fixed Bugs section.
+
+* [W3Schools:](https://www.w3schools.com/)
+W3 Schools was another site that provided invaluable information in general on all aspects of HTML, CSS and JavaScript including layout issues and creating functions.
+
+* Mentor Support:
+Thanks to my mentor Rohit Sharma for his helpful feedback and support. 
+
+* Code Institute Tutor Support:
+Tutor Support also helped to resolve issues during the project. Without the expert support, I would not have been able to finish the project by the deadline.
+
 ### Media
-### Acknowledgements
+
+* The wireframes were created using [Balsamiq.](https://balsamiq.com/)
+* The font came from [Google Fonts](https://fonts.google.com/)
+* All book images and book synopsis’ are taken directly from [Amazon](https://www.amazon.co.uk/)
+* [Coolors](https://coolors.co/) to generate a colour scheme
+* [Techsini:](https://techsini.com/multi-mockup/index.php) 
+To produce mockup image across multiple devices.
 
 
+### Acknowledgements 
+* Thanks to my mentor Rohit Sharma for his helpful feedback and invaluable support throughout this project.
+* My friends and family for their continuing support during this course and helping me test the app.
+* The Code Institute tutors who have responded quickly to my queries and added to my understanding of the subject.
 
-
-## Deployment
+---
