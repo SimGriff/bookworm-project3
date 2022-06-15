@@ -61,6 +61,8 @@ Bookworm is an interactive book review site for all book fans. The site allows r
 * Contact Page allows user to contact site owner.
 * Flash messages providing user feedback for registered users when initially registered, logged in, logged out.
 
+---
+
 ### Future Features
 
 * Registered Users can review books before adding them to the site.
@@ -101,6 +103,8 @@ Once these two fields are completed the user has to press the Register button. I
 * Contact
 The Contact navigation link is available to logged in/out users and unregistered visitors. Once selected the user is presented with a contact form with four fields, First Name, Last Name, Email and Your Comments. There is a send button at the bottom centre of the form.
 
+---
+
 ### Database Schema
 There are three collections in the MongoDB database:
 1. users
@@ -125,6 +129,8 @@ The main colour used on all nav bars and footers was #297373 with white text to 
 [Adobe Color-Wheel](https://color.adobe.com/create/color-wheel) was used to match a complimentary colour for all edit/add buttons on the #297373 background, #fff was chosen as this colour stood out and highlighted the buttons on the page. All Cancel/Delete buttons are #FF8552 with white text #fff.
 All text passed on the contrast checker on the [Adobe Color](https://color.adobe.com/create/color-contrast-analyzer) using the corresponding hex values for the  analyser ensuring excellent readability. 
 
+---
+
 ### Typography
 
 I used [Google Fonts](https://fonts.google.com/) to import the fonts used for this site. 
@@ -132,10 +138,14 @@ The __Source Serif Pro__ font is used for all headers and titles. Designed by Fr
 __Source Sans Pro__ was designed to perfectly compliment Source Serif Pro, I used the Source Sans Pro font for the main text throughout the site. Both fonts work perfectly together, they are easy to read and help convey the subject of the site.
 Both fonts are fully cleared for both personal and commercial use.
 
+---
+
 ### Imagery
 I have not used a background image on this site because I felt it would distract from the main focus of the site, the actual books with their cover images. Book cover images were taken directly from [Amazon](https://www.amazon.co.uk/).
 
 Icons from [Font Awesome](https://fontawesome.com/) are used throughout the site. The icons help inform the user of the purpose of a particular section and lead to a more enjoyable user experience. I have also used a Font Awesome icon as my main logo displayed throughout the site.
+
+---
 
 ### Wireframes
 
@@ -174,6 +184,8 @@ The wireframes for the Bookworm site were produced using Balsamiq.
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [JavaScrip](https://www.javascript.com/)
 * [Python3](https://www.python.org/)
+
+---
 
 ### Frameworks, Libraries & Programs Used
 
@@ -257,6 +269,7 @@ The Validator results from the [W3C Markupm Validation Service](https://validato
 
 ![HTML 404 validation](static/images/testing/w3c-validator-404.png)
 
+---
 
 ### W3C CSS Validation Results
 
@@ -264,6 +277,7 @@ The Validator results from the [W3C CSS Validation Service](https://jigsaw.w3.or
 
 ![CSS validation](static/images/testing/w3c-css-validator-results.png)
 
+---
 
 ### JSHint Results
 
@@ -271,14 +285,17 @@ The Validator results from the [W3C CSS Validation Service](https://jigsaw.w3.or
 
 ![JSHint](static/images/testing/jshint-screenshot.png)
 
+---
 
 ### Pep8 Validation
 
 Python was checked to [PEP8](http://pep8online.com/) compliance and passed with no issues.
 
+---
+
 ### Lighthouse Testing
 
-
+---
 ### Testing User Stories
 
 - Unregistered User
@@ -322,8 +339,24 @@ Python was checked to [PEP8](http://pep8online.com/) compliance and passed with 
   6. As the site owner, I want to be able to delete a genre.<br>
 *On the Manage Genres page, all genres are shown with an edit and delete button on each.*
 
+---
 
 ### Manual Testing
+* Chrome DevTools was used throughout the project to test and develop as I progressed through to completion. 
+* The website has been tested on a number of devices including, iPhone SE, iPhone XR, iPhone 12 Pro, Pixel 5, Samsung Galaxy S8+, Samsung Galaxy S20 Ultra, Samsung Galaxy A51/71, Nest Hub and Nest Hub Max.
+* Friends and family members were asked to review the app and test its responsiveness, they reported no user experience issues.
+* The website was checked on various browsers: Google chrome, Microsoft Edge, Mozilla Firefox and Safari. Viewed all pages on each and checked the following:
+* The main navigation links for Home, Profile, Add Book, Manage Genres, Log Out, Register and Contact take the user to the appropriate page.
+*The Bookworm brand name and Logo link back to the Home page.
+*The Search area was tested and works for searched that include the author’s name or book title. The reset button clears the entered search text, the Search icon carries out the search when selected and the relevant book/s are displayed. If no book in the database the flash message “No Results Found” is displayed.
+* Edit and Delete buttons are also shown under the user’s books and are functioning as expected. The Edit Book form appears once the Edit button is selected presenting the user with the correct fields with the correct pre filled labels for the book. “Book Successfully updated” flash message displayed when a field has been edited, the cancel button returns the user to the home page.
+When a user selected the delete button a message box is displayed asking the user to confirm deletion with a further Delete button to confirm and a cancel option on the left. Once deletion has been confirmed the book is removed from the database.
+* Add Book navigation link takes the user to the Add Book Form with all relevant fields fully functional including dropdowns. The Add Book and Cancel buttons both function as expected. The user cannot add another book with the same title, the “This book already exists “ flash message displays when the user attempts to submit the form.
+“Book Successfully Added” flash message displays once a book has been added to the database, then the user is directed back to the home page.
+* Log in and Log Out screen perform as expected with all buttons directing the user to the appropriate page. The Login button directs the user to their profile page with the flash message of “Welcome,’username’. Log Out takes the user to the Home page with the flash message “You are logged out” and the logged out navigation links, Home, Register, Log In and Contact.
+* Register opens their profile page with the flash message “You have successfully registered!” and underneath “username”’s Library.
+* The Profile Navigation Link only displays for logged in users. Once selected the users’ name appears at the top of the Library Page along with all the books added by that user. When admin is logged in they have access to the entire collection of books on the database with full edit and delete access.
+* The Social Media links on the footer direct the user to the relevant social media sites.
 
 
 ### Bugs
