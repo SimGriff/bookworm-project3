@@ -13,7 +13,7 @@
                 </div>
                 <!-- search/reset buttons -->
                 <div class="col s12 m4">
-                    <a href="{{ url_for('get_books')}}" class="btn orange-btn">Reset</a>
+                    <a href="{{ url_for('get_books')}}" class="btn deep-orange darken-1">Reset</a>
                     <button type="submit" class="btn teal darken-3">
                         <i class ="fas fa-magnifying-glass left"></i>
                     </button>
@@ -47,13 +47,13 @@
                         <a href="{{ url_for('edit_book', book_id=book._id) }}" class="waves-effect waves-light green-btn btn-large">
                         <i class="fas fa-pencil left"></i> Edit </a>    
                         <!-- delete button modal -->
-                        <a href="#{{book._id}}" class="waves-effect waves-light orange-btn modal-trigger center-align btn-large">
+                        <a href="#{{book._id}}" class="waves-effect waves-light deep-orange darken-1 modal-trigger center-align btn-large">
                             <i class="fas fa-trash-can left"></i>Delete</a>
                             <div id="{{book._id}}" class="modal center-align">
                                 <div class="modal-content">
                                 <h4>Confirm Deletion</h4>
                                 <!-- delete confirmation button -->
-                                <a href="{{ url_for('delete_book', book_id=book._id) }}" class="orange-btn btn-large">
+                                <a href="{{ url_for('delete_book', book_id=book._id) }}" class="deep-orange darken-1 btn-large">
                                     <i class="fas fa-trash-can left"></i>Delete</a>  
                                 </div>
                                 <!-- cancel button -->
