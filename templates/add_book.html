@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fa-solid fa-book-journal-whills prefix"></i>
-                    <select id="genre_name" name="genre_name" class="validate" required>
+                    <select id="genre_name" name="genre_name" label for="genre_name" class="validate" required>
                         <option value="" disabled selected>Choose Genre</option>
                             {% for genre in genres %}
                         <option value="{{ genre.genre_name }}">{{ genre.genre_name }}</option>
@@ -61,7 +61,7 @@
                 <div class="input-field col s12">
                     <i class="fa-solid fa-thumbs-up prefix"></i>
                     <label for="rating">Rate Book</label>
-                        <select name="rating" id="rating">
+                        <select name="rating" id="rating" label for="rating">
                             <option disabled selected value></option>
                             <option value="0" aria-label="0">0</option>
                             <option value="1" aria-label="1">1</option>
