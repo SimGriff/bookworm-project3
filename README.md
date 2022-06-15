@@ -214,43 +214,51 @@ Throughout the project I have been using DevTools on the Chrome browser to test 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 ### W3C Markup Validator results:
-*add_books.html
-![HTML books validation](static/images/testing/w3c-validator-add_books.png)
+The Validator results from the W3C Markupm Validation Service (https://validator.w3.org/) showed no errors or warnings on the following pages.
 
-*add_genre.html
+* books.html
+
+![HTML books validation](static/images/testing/w3c-validator-home.png)
+
+* add_books.html
+
+![HTML add_books validation](static/images/testing/w3c-validator-add_book.png)
+
+* genres.html
+
+![HTML genres validation](static/images/testing/w3c-validator-manage_genres.png)
+
+* add_genre.html
+
 ![HTML add_genre validation](static/images/testing/w3c-validator-add_genre.png)
 
-*base.html
-![HTML base validation](static/images/testing/w3c-validator-base.png)
+* contact.html
 
-*books.html
-![HTML books validation](static/images/testing/w3c-validator-books.png)
+![HTML contact validation](static/images/testing/w3c-validator-contact.png)
 
-*contact.html
-![HTML contact validation](static/images /testing/w3c-validator-contact.png)
+* edit_book.html
 
-*edit_book.html
 ![HTML edit_book validation](static/images/testing/w3c-validator-edit_book.png)
 
-*edit_genre.html
+* edit_genre.html
+
 ![HTML edit_genre validation](static/images/testing/w3c-validator-edit_genre.png)
 
-*genres.html
-![HTML genres validation](static/images/testing/w3c-validator-genres.png)
+* login.html
 
-*login.html
 ![HTML login validation](static/images/testing/w3c-validator-login.png)
 
-*my_library.html
-![HTML my_library validation](static/images/testing/w3c-validator-my_library.png)
+* profile.html
 
-*profile.html
 ![HTML profile validation](static/images/testing/w3c-validator-profile.png)
 
-*register.html
+* register.html
+
 ![HTML register validation](static/images/testing/w3c-validator-register.png)
-*404.html
-![HTML register validation](static/images/testing/w3c-validator-404.png)
+
+* 404.html
+
+![HTML 404 validation](static/images/testing/w3c-validator-404.png)
 
 
 #### W3C Markup Validation Results
