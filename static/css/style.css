@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
     background-color: #E6E6E6;
 }
 
-.card.image {
+.card.card-image {
     padding-top: 10px;
     padding-left: 10px;
 }

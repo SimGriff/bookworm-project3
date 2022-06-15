@@ -209,6 +209,50 @@ For deploying the application.
 
 ### Testing
 
+Throughout the project I have been using DevTools on the Chrome browser to test changes to the HTML and CSS code. I have committed regularly and included detailed messages detailing the changes made.
+
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+### W3C Markup Validator results:
+*add_books.html
+![HTML books validation](static/images/testing/w3c-validator-add_books.png)
+
+*add_genre.html
+![HTML add_genre validation](static/images/testing/w3c-validator-add_genre.png)
+
+*base.html
+![HTML base validation](static/images/testing/w3c-validator-base.png)
+
+*books.html
+![HTML books validation](static/images/testing/w3c-validator-books.png)
+
+*contact.html
+![HTML contact validation](static/images /testing/w3c-validator-contact.png)
+
+*edit_book.html
+![HTML edit_book validation](static/images/testing/w3c-validator-edit_book.png)
+
+*edit_genre.html
+![HTML edit_genre validation](static/images/testing/w3c-validator-edit_genre.png)
+
+*genres.html
+![HTML genres validation](static/images/testing/w3c-validator-genres.png)
+
+*login.html
+![HTML login validation](static/images/testing/w3c-validator-login.png)
+
+*my_library.html
+![HTML my_library validation](static/images/testing/w3c-validator-my_library.png)
+
+*profile.html
+![HTML profile validation](static/images/testing/w3c-validator-profile.png)
+
+*register.html
+![HTML register validation](static/images/testing/w3c-validator-register.png)
+*404.html
+![HTML register validation](static/images/testing/w3c-validator-404.png)
+
+
 #### W3C Markup Validation Results
 
 #### W3C Vilidator Results
