@@ -27,21 +27,18 @@ Bookworm is an interactive book review site for all book fans. The site allows r
     2. As a registered user, I want to be able to search for books.
     3. As a registered user, I want to be able to add books.
     4. As a registered user, I want to be able to view all books that I have added on my profile page.
-    5. As a registered user, I want to be able to write reviews about any book.
-    6. As a registered user, I want to be able to edit my books and my reviews.
-    7. As a registered user, I want to be able to delete my books.
-    8. As a registered user, I should not be able to delete or edit other user’s books.
+    5. As a registered user, I want to be able to edit my books and my reviews.
+    6. As a registered user, I want to be able to delete my books.
+    7. As a registered user, I should not be able to delete or edit other user’s books.
 
 - Site Admin
     1. As the site owner, I want to be able to add books.
     2. As the site owner, I want to be able to edit any book.
     3. As the site owner, I want to be able to delete any book.
-    7. As the site owner, I want to be able to add a genre.
-    8. As the site owner, I want to be able to edit a genre.
-    9. As the site owner, I want to be able to delete a genre.
-    10. As the site owner, I want to be able to reset a user’s password.
-    11. As the site owner, I want to be able to delete a user’s account.  
-
+    4. As the site owner, I want to be able to add a genre.
+    5. As the site owner, I want to be able to edit a genre.
+    6. As the site owner, I want to be able to delete a genre.
+   
 ---
 
 ## Features
@@ -283,6 +280,48 @@ Python was checked to [PEP8](http://pep8online.com/) compliance and passed with 
 
 
 ### Testing User Stories
+
+- Unregistered User
+  1. As an unregistered user, I want to be able to search for books on the site.<br>
+*Search function at the top of home page allows search under book title or author.*
+  2. As an unregistered user, I want to  be able to view reviews for each book.<br>
+*Unregistered users have access to the full range of books in the collection with reviews and ratings for each book.*
+  3. As an unregistered user, I want to  be able to Register as a new User on the site<br>*Registration form is available and allows a visitor to register on the site with a username and password.*
+  4. As an unregistered user, I want to  be able to get visual feedback when an action is completed.<br>
+*Flash messages are shown at various stages to provide user feedback e.g. login, logout.*
+  5. As an unregistered user, I want to  be able to contact the Site Owner with any questions or suggestion.<br>
+*There is a contact link that takes the visitor to a form where they can contact the site owner.*
+
+* Registered user
+  1. As a registered user, I want to be able to login and logout of the site.<br>
+*Login and Logout navigation links take the user to the relevant form to either login or logout.*
+  2. As a registered user, I want to be able to search for books.<br>
+*Users have access to the full range of books in the collection with reviews and ratings for each book.*
+  3. As a registered user, I want to be able to add books.<br>
+  *The Add Book navigation link is present for logged in users that takes them to a form so that they can add the book details.*
+  4. As a registered user, I want to be able to view all books that I have added on my profile page.<br>
+*The Profile navigation link is available to logged in users, this takes them to their library where all their added books are displayed.*
+  5. As a registered user, I want to be able to edit my books and my reviews.<br>
+*The edit button is available on each of the users books to change the details if needed.*
+  6. As a registered user, I want to be able to delete my books.<br>
+*The delete button is available on each of the users books to delete books if needed.*
+  7. As a registered user, I should not be able to delete or edit other user’s books.<br>
+*Only the admin user can edit or delete every book in the collection, users are restricted to editing and deleting their own added books.*
+
+- Site Admin
+  1. As the site owner, I want to be able to add books.<br>
+*The Add Book navigation link is present for logged in users that takes them to a form so that they can add the book details.*
+  2. As the site owner, I want to be able to edit any book.<br>
+  *The edit button is available on every book to change the details if needed.*
+  3. As the site owner, I want to be able to delete any book.<br>
+*The delete button is available on every book to delete books if needed.*
+  4. As the site owner, I want to be able to add a genre.<br>
+*The Manage Genres navigation link takes the admin user to the Manage Genres page where they can add a genre.*
+  5. As the site owner, I want to be able to edit a genre.<br>
+*On the Manage Genres page, all genres are shown with an edit and delete button on each.*
+  6. As the site owner, I want to be able to delete a genre.<br>
+*On the Manage Genres page, all genres are shown with an edit and delete button on each.*
+
 
 ### Manual Testing
 
