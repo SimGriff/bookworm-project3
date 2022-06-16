@@ -173,7 +173,9 @@ def edit_book(book_id):
 @app.route("/delete_book/<book_id>")
 def delete_book(book_id):
     """Deletes a book from the database."""
-    mongo.db.books.delete_one({"_id": ObjectId(book_id)})
+    book = mongo.db.books.find_one({"_id": ObjectId(book_id)})
+    if book and book['added_by'] == session['user']:
+        mongo.db.books.delete_one({"_id": ObjectId(book_id)})
     flash("Book Successfully Deleted")
     return redirect(url_for("get_books"))
 
