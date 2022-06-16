@@ -159,7 +159,6 @@ The wireframes for the Bookworm site were produced using Balsamiq.
   - [Edit Book Page](static/wireframes/edit-book-mobile.png)
   - [Admin Profile Page](static/wireframes/admin-profile-mobile.png)
   - [Admin Manage Genres](static/wireframes/manage-genres-mobile.png)
-  - [Admin Manage Users](static/wireframes/…………..png)
   - [Contact Page](static/wireframes/contact-page-mobile.png)
 
 * Desktop Wireframes:
@@ -171,7 +170,6 @@ The wireframes for the Bookworm site were produced using Balsamiq.
   - [Edit Book Page](static/wireframes/edit-book-desktop.png)
   - [Admin Profile Page](static/wireframes/admin-profile-desktop.png)
   - [Admin Manage Genres](static/wireframes/manage-genres-desktop.png)
-  - [Admin Manage Users](static/wireframes/…………..png)
   - [Contact Page](static/wireframes/contact-page-desktop.png)
 
 ---
@@ -296,7 +294,71 @@ Python was checked to [PEP8](http://pep8online.com/) compliance and passed with 
 ### Lighthouse Testing
 
 For the Lighthouse testing SEO only reached a score of 86, when I checked the META descriptions hadn’t been added in my html, I added these and retested with scores of 100 for all pages.
-I also had issues with the accessibility Scores of 80 for the *‘add book’*, *‘edit book’*, *‘get book’* and *‘get genre’* pages on both mobile and desktop view. I had the *‘Form Elements do not have associated labels’* warning, I added aria-label to all relevant areas and managed to increase the score to 88. As I was using Materialize I could not discover how to add the aria-labels for the two materialize drop down sections. I was therefore unable to increase the score further. 
+I also had issues with the accessibility Scores of 80 for the *‘add book’*, *‘edit book’*, *‘get book’* and *‘get genre’* pages on both mobile and desktop view. I had the *‘Form Elements do not have associated labels’* warning, I added aria-label to all relevant areas and managed to increase the score to 97 for *‘get book’* and 96 for *‘get genre’*. I was also able to increase the accessibility score for *‘add book’* and *‘edit book’* to 88.As I was using Materialize I could not discover how to add the aria-labels for the two materialize drop down sections. I was therefore unable to increase the score further. 
+
+* Mobile Testing
+
+* [add_book](static/images/testing/lighthouse-add-book-mobile.png)
+
+
+* [add_genre](static/images/testing/lighthouse-add-genre-mobile.png)
+
+
+* [contact](static/images/testing/lighthouse-contact-mobile.png)
+
+
+* [edit_book](static/images/testing/lighthouse-edit-book-mobile.png)
+
+
+* [edit_genre](static/images/testing/lighthouse-edit-genre-mobile.png)
+
+
+* [get_books](static/images/testing/lighthouse-get-books-mobile.png)
+
+
+* [get_genres](static/images/testing/lighthouse-get-genre-mobile.png)
+
+
+* [login](static/images/testing/lighthouse-login-mobile.png)
+
+
+* [profile](static/images/testing/lighthouse-profile-mobile.png)
+
+
+* [register](static/images/testing/lighthouse-register-mobile.png)
+
+
+* Desktop Testing
+
+
+* [add_book](static/images/testing/lighthouse-add-book-desktop.png)
+
+
+* [add_genre](static/images/testing/lighthouse-add-genre-desktop.png)
+
+
+* [contact](static/images/testing/lighthouse-contact-desktop.png)
+
+
+* [edit_book](static/images/testing/lighthouse-edit-book-desktop.png)
+
+
+* [edit_genre](static/images/testing/lighthouse-edit-genre-desktop.png)
+
+
+* [get_books](static/images/testing/lighthouse-get-books-desktop.png)
+
+
+* [get_genres](static/images/testing/lighthouse-get-genre-desktop.png)
+
+
+* [login](static/images/testing/lighthouse-login-desktop.png)
+
+
+* [profile](static/images/testing/lighthouse-profile-desktop.png)
+
+
+* [register](static/images/testing/lighthouse-register-desktop.png)
 
 
 ---
