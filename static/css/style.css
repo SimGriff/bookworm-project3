@@ -44,6 +44,7 @@ h1, h2, h3, h4 {
     padding-left: 10px;
 }
 
+
 .input-field>label {
     color:black
 }
@@ -74,5 +75,8 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 425px) {
     .card.horizontal{
         flex-direction: column;
+    }
+    .card-stacked{
+        text-align: center;
     }
 }
