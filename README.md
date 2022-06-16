@@ -386,7 +386,6 @@ Using the ‘card horizontal’ Materialize class. As I was using Materialise in
  ![layout-fix](static/images/screenshots/layout-fixed.png)
 
 
-
 ### Unfixed Bugs
 * Users can enter a book title more than once on the site if the spelling is incorrect or missing out ‘The’ at the start of the title.
 
@@ -394,6 +393,37 @@ Using the ‘card horizontal’ Materialize class. As I was using Materialise in
 ---
 
 ## Deployment
+
+### Heroku
+The project was deployed to Heroku using the following steps:
+* Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
+* Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
+* Next, create your Procfile using the following terminal command echo web: python app.py > Procfile
+* Git add and git commit the new requirements and Procfile and then git push the project to GitPod. 
+* Go to Heroku.com 
+* Click on ‘new’ in the top right, select ‘Create a new app’ from the dropdown.
+* Give the app a name, all lowercase with any spaces replaced with -.
+* Select the region as ‘Europe’.
+* Select ‘Create App’
+* From the Heroku dashboard of your new app, click on ‘Deploy’ , then ‘Deployment method’ and select GitHub. 
+* Confirm linking of the Heroku app to the correct Github repository.
+* In the Heroku dashboard, go to settings at the top of the page, select ‘Reveal Config Vars’.
+* Set the following config vars:
+
+| KEY | VALUE |
+| --- | --- | 
+| IP | 0.0.0.0 |
+| PORT | 5000 |
+| SECRET_KEY  | Your Secret Key |
+| MONGO_URI  | Your MongoDB URI |
+| MONGO_DBNAME  | Name of your database |
+
+
+
+* Hide Config Vars
+* Select ‘Deploy’, then GitHub, search and connect to your repository.
+* Select ‘Enable Automatic Deployment’ from the GitHub Master / Main branch
+* Click on ‘Open App’ to launch your App in a new Browser window.
 
 ---
 
