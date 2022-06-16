@@ -295,6 +295,10 @@ Python was checked to [PEP8](http://pep8online.com/) compliance and passed with 
 
 ### Lighthouse Testing
 
+For the Lighthouse testing SEO only reached a score of 86, when I checked the META descriptions hadn’t been added in my html, I added these and retested with scores of 100 for all pages.
+I also had issues with the accessibility Scores of 80 for the *‘add book’*, *‘edit book’*, *‘get book’* and *‘get genre’* pages on both mobile and desktop view. I had the *‘Form Elements do not have associated labels’* warning, I added aria-label to all relevant areas and managed to increase the score to 88. As I was using Materialize I could not discover how to add the aria-labels for the two materialize drop down sections. I was therefore unable to increase the score further. 
+
+
 ---
 ### Testing User Stories
 
@@ -389,6 +393,7 @@ Using the ‘card horizontal’ Materialize class. As I was using Materialise in
 ### Unfixed Bugs
 * Users can enter a book title more than once on the site if the spelling is incorrect or missing out ‘The’ at the start of the title.
 
+* Can't get the 404 page to function, unfortunately, I did not have enough time at the end of the project to resolve the issue.
 
 ---
 
