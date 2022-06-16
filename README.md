@@ -1,6 +1,6 @@
 # Bookworm
 
-![Screenshot of mockup](#)
+![Screenshot of mockup](static/images/screenshots/mockup.png)
 
 View the deployed site [here:](https://bookworm-project3.herokuapp.com/)
 
